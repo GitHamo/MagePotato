@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magepotato. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magepotato_Core::magepotato" title="Magepotato" module="Magepotato_Core" sortOrder="10" resource="Magepotato_Core::magepotato"/>
+        <add id="Magepotato_Core::information" title="Potato for Magento" module="Magepotato_Core" sortOrder="10" action="magepotato" resource="Magepotato_Core::information" parent="Magepotato_Core::magepotato"/>
+    </menu>
+</config>

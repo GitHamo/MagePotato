@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magepotato. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magepotato_Tools::tools" title="Tools" module="Magepotato_Tools" sortOrder="10" resource="Magepotato_Tools::tools" parent="Magepotato_Core::magepotato"/>
+        <add id="Magepotato_Tools::export" title="Export" module="Magepotato_Tools" sortOrder="10" action="magepotato/export" resource="Magepotato_Tools::export" parent="Magepotato_Tools::tools"/>
+        <add id="Magepotato_Tools::import" title="Import" module="Magepotato_Tools" sortOrder="20" action="magepotato/import" resource="Magepotato_Tools::import" parent="Magepotato_Tools::tools"/>
+        <add id="Magepotato_Tools::toolbox" title="Toolbox" module="Magepotato_Tools" sortOrder="30" action="magepotato/toolbox" resource="Magepotato_Tools::toolbox" parent="Magepotato_Tools::tools"/>
+    </menu>
+</config>

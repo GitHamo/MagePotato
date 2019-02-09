@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magepotato. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <body>
+        <referenceContainer name="content">
+            <block class="Magento\Backend\Block\Template" name="magepotato.toolbox.options" template="Magepotato_Tools::toolbox.phtml"/>
+            <block class="Magento\Backend\Block\Template" name="magepotato.toolbox.import" template="Magepotato_Tools::import-form.phtml"/>
+        </referenceContainer>
+    </body>
+</config>

@@ -1,0 +1,22 @@
+<?php
+/**
+ * Copyright © Magepotato. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+
+// @codingStandardsIgnoreFile
+
+/** @var \Magento\Backend\Block\Template $block */
+
+
+
+$pagesExportUrl = $block->getUrl("magepotato/toolbox/export", ['type' => \Magento\Cms\Model\Page::CACHE_TAG]);
+$blocksExportUrl = $block->getUrl("magepotato/toolbox/export", ['type' => \Magento\Cms\Model\Block::CACHE_TAG]);
+
+?>
+
+<a class="action-primary" href="<?=$pagesExportUrl?>">Export Pages</a>
+<a class="action-default" href="<?=$blocksExportUrl?>">Export Blocks</a>
+
+<br>
+<br>
