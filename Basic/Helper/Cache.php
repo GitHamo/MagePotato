@@ -5,11 +5,6 @@
  */
 namespace Magepotato\Basic\Helper;
 
-use Magento\Msrp\Model\Product\Attribute\Source\Type;
-use Magento\Store\Model\StoreManagerInterface;
-use Magento\Catalog\Model\Product;
-use Magento\Catalog\Api\ProductRepositoryInterface;
-
 class Cache extends \Magento\Framework\App\Helper\AbstractHelper
 {
     /**
@@ -21,8 +16,6 @@ class Cache extends \Magento\Framework\App\Helper\AbstractHelper
      * Construct
      *
      * @param \Magento\Framework\App\Helper\Context $context
-     * @param Filesystem $filesystem
-     * @param \Magento\Framework\AuthorizationInterface $authorization
      * @param \Magento\Framework\App\Cache\TypeListInterface $cacheTypeList
      */
     public function __construct(
