@@ -3,7 +3,7 @@
     "description": "Custom modules for Magento v2",
     "type": "magento2-module",
     "version": "1.0.0",
-    "license": "proprietary",
+    "license": "CC-BY-NC-SA-4.0",
     "authors": [
         {
             "name": "Ahmed Hamouda",
@@ -13,12 +13,12 @@
         }
 
     ],
-    "minimum-stability": "dev",
+    "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "MagePotato\\Basic\\": "Basic",
-            "MagePotato\\Core\\": "Core",
-            "MagePotato\\Tools\\": "Tools"
+            "Magepotato\\Basic\\": "Basic",
+            "Magepotato\\Core\\": "Core",
+            "Magepotato\\Tools\\": "Tools"
         },
         "files": [
             "Basic/registration.php",
@@ -27,7 +27,7 @@
         ]
     },
     "require": {
-        "league/csv": "^8.0",
-        "guzzlehttp/guzzle": "~6.0"
+        "php": "~7.0.13|~7.1.0",
+        "league/csv": "^8.0"
     }
 }
