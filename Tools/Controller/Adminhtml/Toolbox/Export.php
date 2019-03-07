@@ -10,7 +10,7 @@ class Export extends \Magento\Backend\App\Action
     protected $helper;
 
     public function __construct(
-        \Magento\Framework\App\Action\Context $context,
+        \Magento\Backend\App\Action\Context $context,
         \Magepotato\Tools\Helper\FileDataManager $helper
     ){
         $this->helper = $helper;
